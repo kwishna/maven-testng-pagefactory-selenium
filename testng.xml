@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite" verbose="1" data-provider-thread-count="8" parallel="tests">
+    <listeners>
+        <listener class-name="org.example.listeners.ListenerClass"/>
+<!--        <listener class-name="org.example.listeners.RetryFailedTests"></listener>-->
+    </listeners>
+    <test name="Smoke">
+        <classes>
+            <class name="org.example.tests.GoogleTest"/>
+        </classes>
+    </test>
+</suite>

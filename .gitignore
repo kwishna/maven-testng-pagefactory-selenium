@@ -1,0 +1,4 @@
+ExtentReports.zip
+.idea
+target/
+*.log
