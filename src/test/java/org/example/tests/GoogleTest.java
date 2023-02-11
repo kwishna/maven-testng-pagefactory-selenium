@@ -15,6 +15,7 @@ public class GoogleTest extends BaseTest {
 
     @Test
     public void homePageTest() {
+        System.out.println("EMAIL_TO: "+System.getProperty("EMAIL_TO"));
         logger.info("Home Page Navigation");
         GooglePage page = new GooglePage(getDriver());
         page.navigate();
