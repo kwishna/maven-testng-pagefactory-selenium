@@ -34,6 +34,7 @@ public interface Constants {
     String ZIPPED_EXTENT_REPORTS_FOLDER_NAME = "ExtentReports.zip";
     String PROJECT_NAME = System.getProperty("PROJECT_NAME", "PROJECT_NAME");
     String TEST_ENV = System.getProperty("TEST_ENV", "QA");
+    boolean RETRY_FAILED_TESTS = Boolean.parseBoolean(System.getProperty("RETRY_FAILED_TESTS", "false"));
     boolean HEADLESS = Boolean.parseBoolean(System.getProperty("HEADLESS", "false"));
     boolean SEND_MAIL = Boolean.parseBoolean(System.getProperty("SEND_MAIL", "false"));
     String CHROME_DRIVER_PATH = System.getProperty("CHROME_DRIVER_PATH", PROJECT_PATH + "/drivers/chromedriver.exe");
