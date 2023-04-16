@@ -29,6 +29,7 @@ public final class BrowserDrivers {
         return new ChromeDriver(new ChromeOptions() {{
             setHeadless(HEADLESS);
             addArguments("--start-maximized");
+            addArguments("--remote-allow-origins=*");
             setImplicitWaitTimeout(Duration.ofSeconds(IMPLICIT_WAIT));
             setUnhandledPromptBehaviour(UnexpectedAlertBehaviour.ACCEPT);
         }});
@@ -51,6 +52,7 @@ public final class BrowserDrivers {
         return new EdgeDriver(new EdgeOptions() {{
             setHeadless(HEADLESS);
             addArguments("--start-maximized");
+            addArguments("--remote-allow-origins=*");
             setImplicitWaitTimeout(Duration.ofSeconds(IMPLICIT_WAIT));
             setUnhandledPromptBehaviour(UnexpectedAlertBehaviour.ACCEPT);
         }});
